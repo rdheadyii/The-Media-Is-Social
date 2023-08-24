@@ -1,5 +1,7 @@
+// import needed models
 const { Thought, User } = require('../models');
 
+// export out controllers
 module.exports = {
     // get all thoughts
     async getThoughts(req, res) {
@@ -14,6 +16,10 @@ module.exports = {
     async getSingleThought(req, res) {
         try {
             const thought = await Thought.findOne({ _id: req.params.thoughtId })
+                .populate({
+                    path: "reactions",
+                    select: "-__v",
+                })
                 .select('-__v');
     
             if (!thought) {
