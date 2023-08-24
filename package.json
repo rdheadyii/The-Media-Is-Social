@@ -1,0 +1,17 @@
+{
+  "name": "the-media-is-social",
+  "version": "1.0.0",
+  "description": "backend for a social media platform that uses express and mongoDB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "rdheadyii",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^7.0.2"
+  }
+}
