@@ -47,5 +47,5 @@ userSchema
 // creat the model using schema and declare its name
 const User = model('user', userSchema)
 
-// eport out model
+// export out model
 module.exports = User;
